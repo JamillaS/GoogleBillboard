@@ -25,9 +25,9 @@ public void setup()
 }  
 public void draw()  
 {   
-	for(int j= 0; j < e.length; j++ )
+	for(int j = 1; j < 100; j++ )
 	{
-		digits = e.substring(2, 12);
+		
 	}
 }  
 public boolean isPrime(double dNum)  
