@@ -14,21 +14,30 @@ import java.io.IOException;
 
 public class GoogleBillboard extends PApplet {
 
+
 public final static String e = "2.718281828459045235360287471352662497757247093699959574966967627724076630353547594571382178525166427427466391932003059";  
 public void setup()  
 {   	
-	
 	String digits = e.substring(2,12);
-	double dNum = Double.parseDouble(digits);
-	System.out.println(dNum);
+	for(int j = 2; j < e.length()-10; j++)
+	{
+		double dNum = Double.parseDouble(digits);
+		
+		if(isPrime(dNum) == true)
+		{
+			System.out.println(dNum);
+			break;
+		}
+
+	}
+	
+	
+	
     noLoop();  
 }  
 public void draw()  
 {   
-	for(int j = 1; j < 100; j++ )
-	{
-		
-	}
+
 }  
 public boolean isPrime(double dNum)  
 {   
